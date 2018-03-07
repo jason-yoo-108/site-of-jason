@@ -1,5 +1,11 @@
 .App {
+  width: 100%;
+  height: 100%;
   text-align: center;
+  background-image: url('../images/tempbg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  opacity: 0.9;
 }
 
 .App-logo {
@@ -23,6 +29,10 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
