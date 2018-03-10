@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Nav, Navbar } from 'react-bootstrap/lib';
 import { Navtab } from '../views/Navtab';
 
 export class CustomNavbar extends Component {
@@ -34,24 +35,39 @@ export class CustomNavbar extends Component {
         );
       } else {
         return (
-          <Navtab key={i} link="#" text={obj.text} onClick={this.handleClick} />
+          <Navtab
+            key={i}
+            style={{ color: 'white' }}
+            link="#"
+            text={obj.text}
+            onClick={this.handleClick}
+          />
         );
       }
     }, this);
   }
 
   render() {
+    const fadedGray = 'rgba(96, 96, 96, 0.7)';
     return (
-      <nav className="navbar navbar-inverse navbar-fixed-top">
-        <div className="container-fluid">
-          <div className="navbar-header">
-            <a className="navbar-brand" href="#">
-              Jason's Website
+      <Navbar
+        style={{ background: fadedGray, borderColor: fadedGray }}
+        collapseOnSelect
+        fluid
+      >
+        <Navbar.Header>
+          <Navbar.Brand>
+            <a href="#brand" style={{ color: 'white' }}>
+              Jason Yoo
             </a>
-          </div>
-          <ul className="nav navbar-nav navbar-right">{this.populate()}</ul>
-        </div>
-      </nav>
+          </Navbar.Brand>
+          <Navbar.Toggle />
+        </Navbar.Header>
+
+        <Navbar.Collapse>
+          <Nav pullRight>{this.populate()}</Nav>
+        </Navbar.Collapse>
+      </Navbar>
     );
   }
 }
