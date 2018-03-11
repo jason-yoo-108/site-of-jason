@@ -27,7 +27,7 @@ export class CustomNavbar extends Component {
         return (
           <Navtab
             key={i}
-            style={{ color: 'red' }}
+            style={{ color: 'yellow' }}
             link="#"
             text={obj.text}
             onClick={this.handleClick}
@@ -53,11 +53,12 @@ export class CustomNavbar extends Component {
       <Navbar
         style={{ background: fadedGray, borderColor: fadedGray }}
         collapseOnSelect
+        fixedTop
         fluid
       >
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#brand" style={{ color: 'white' }}>
+            <a href="" style={{ fontSize: 30, color: 'white' }}>
               Jason Yoo
             </a>
           </Navbar.Brand>
