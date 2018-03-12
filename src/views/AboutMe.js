@@ -8,7 +8,7 @@ export class AboutMe extends Component {
   }
   render() {
     return (
-      <Jumbotron style={this.props.style}>
+      <Jumbotron style={this.props.jumboStyle}>
         <h1>About Me</h1>
         <p>
           I'm a 3rd year UBC Computer Science student with a passion for

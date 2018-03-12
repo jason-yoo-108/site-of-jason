@@ -8,7 +8,7 @@ export class Quotes extends Component {
   }
   render() {
     return (
-      <Jumbotron style={this.props.style}>
+      <Jumbotron style={this.props.jumboStyle}>
         <h1>Hello, I'm a different card.</h1>
         <p>
           The true person is Not anyone in particular; But, like the deep blue

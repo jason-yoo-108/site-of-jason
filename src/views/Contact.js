@@ -8,7 +8,7 @@ export class Contact extends Component {
   }
   render() {
     return (
-      <Jumbotron style={this.props.style}>
+      <Jumbotron style={this.props.jumboStyle}>
         <h1>Get to know me better :)</h1>
         <p>Email: jasonyoo0116@gmail.com</p>
         <p>

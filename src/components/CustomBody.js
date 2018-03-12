@@ -12,14 +12,17 @@ export class CustomBody extends Component {
   }
 
   render() {
-    const fadedWhite = 'rgba(200, 200, 200, 0.7)';
+    const fadedWhite = 'rgba(200, 200, 200, 0.9)';
+    const jumboStyle = { marginBottom: 12, background: fadedWhite };
     return (
-      <Grid fluid>
-        <AboutMe style={{ marginTop: '80vh', background: fadedWhite }} />
-        <Experiences style={{ background: fadedWhite }} />
-        <Projects style={{ background: fadedWhite }} />
-        <Quotes style={{ background: fadedWhite }} />
-        <Contact style={{ background: fadedWhite }} />
+      <Grid fluid style={{ padding: 0 }}>
+        <AboutMe
+          jumboStyle={Object.assign({ marginTop: '75vh' }, jumboStyle)}
+        />
+        <Experiences jumboStyle={jumboStyle} />
+        <Projects jumboStyle={jumboStyle} />
+        <Quotes jumboStyle={jumboStyle} />
+        <Contact jumboStyle={jumboStyle} />
       </Grid>
     );
   }
