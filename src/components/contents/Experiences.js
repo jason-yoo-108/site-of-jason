@@ -11,33 +11,28 @@ export class Experiences extends Component {
   }
   //style={{marginLeft: 'auto', marginRight: 'auto'}}
   render() {
-    const fitParent = { width: '100%', height: '100%', padding: 24 };
+    const fitParent = { width: '100%', height: '100%', borderRadius: 12 };
     return (
       <Jumbotron style={this.props.jumboStyle}>
-        <Carousel interval="10000000">
+        <h1> Experiences</h1>
+        <Carousel interval="10000">
           <Carousel.Item>
-            <Row>
-              <Col xs={12} sm={6}>
-                <img src={imageSAP} style={fitParent} />
-                <Carousel.Caption style={{ color: 'white' }}>
-                  <h3>SAP DevOps Engineer Internship</h3>
-                </Carousel.Caption>
+            <Row style={{ margin: 0 }}>
+              <Col xs={12} sm={6} style={{ padding: 24 }}>
+                <img src={imageSAP} />
               </Col>
-              <Col xs={12} sm={6}>
-                <h3>The Experience was quite good.</h3>
+              <Col xs={12} sm={6} style={{ padding: 24 }}>
+                <h3>SAP DevOps Engineer Internship</h3>
               </Col>
             </Row>
           </Carousel.Item>
           <Carousel.Item>
-            <Row>
-              <Col xs={12} sm={6}>
-                <img src={imageHoot} style={fitParent} />
-                <Carousel.Caption style={{ color: 'black' }}>
-                  <h3>Hootsuite DevOps Engineer Internship</h3>
-                </Carousel.Caption>
+            <Row style={{ margin: 0 }}>
+              <Col xs={12} sm={6} style={{ padding: 24 }}>
+                <img src={imageHoot} />
               </Col>
-              <Col xs={12} sm={6}>
-                <h3>The Experience to come!</h3>
+              <Col xs={12} sm={6} style={{ padding: 24 }}>
+                <h3>Hootsuite Production Ops & Delivery Internship</h3>
               </Col>
             </Row>
           </Carousel.Item>
