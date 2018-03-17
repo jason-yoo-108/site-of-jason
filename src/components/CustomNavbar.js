@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Nav, Navbar } from 'react-bootstrap/lib';
-import { Navtab } from '../views/Navtab';
+import { Navtab } from './views/Navtab';
 
 export class CustomNavbar extends Component {
   constructor(props) {
