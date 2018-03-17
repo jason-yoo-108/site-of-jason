@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Grid } from 'react-bootstrap/lib';
-import { AboutMe } from '../views/AboutMe';
-import { Contact } from '../views/Contact';
+import { AboutMe } from './views/AboutMe';
+import { Contact } from './views/Contact';
 import { Experiences } from './contents/Experiences';
 import { Projects } from './contents/Projects';
 import { Quotes } from './contents/Quotes';

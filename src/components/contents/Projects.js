@@ -9,13 +9,18 @@ export class Projects extends Component {
   constructor(props) {
     super(props);
   }
-  //style={{marginLeft: 'auto', marginRight: 'auto'}}
   render() {
     const linkZenfulBot = 'https://www.messenger.com/t/zenfulbot';
     const linkMindFulfilled = 'https://github.com/truebluejason/mind_fulfilled';
     return (
-      <Jumbotron style={this.props.jumboStyle}>
-        <h1> Projects</h1>
+      <Jumbotron id="Projects" style={this.props.jumboStyle}>
+        <h1>Projects</h1>
+        <p>
+          One rainy day in 2017, an idea struck me - "Why don't I combine my
+          enthusiasm for meditation and neuroscience with my coding skills to
+          make cool things?" The projects below are the results of my humble
+          effort at realizing that thought.
+        </p>
         <Carousel interval={10000}>
           <Carousel.Item>
             <Row style={{ margin: 0 }}>

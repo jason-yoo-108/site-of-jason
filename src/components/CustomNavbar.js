@@ -12,38 +12,30 @@ export class CustomNavbar extends Component {
       { text: 'Quotes' },
       { text: 'Contact' }
     ];
-    this.state = { active: '' };
     this.handleClick = this.handleClick.bind(this);
     this.populate = this.populate.bind(this);
   }
 
-  handleClick(newTab) {
-    this.setState({ active: newTab });
+  handleClick(name) {
+    if (name === 'About Me') {
+      name = 'AboutMe';
+    }
+    let el = document.getElementById(name);
+    if (!!el && el.scrollIntoView) {
+      el.scrollIntoView();
+    }
   }
 
   populate() {
     return this.tabs.map((obj, i) => {
-      if (obj.text === this.state.active) {
-        return (
-          <Navtab
-            key={i}
-            style={{ color: 'yellow' }}
-            link="#"
-            text={obj.text}
-            onClick={this.handleClick}
-          />
-        );
-      } else {
-        return (
-          <Navtab
-            key={i}
-            style={{ color: 'white' }}
-            link="#"
-            text={obj.text}
-            onClick={this.handleClick}
-          />
-        );
-      }
+      return (
+        <Navtab
+          key={i}
+          style={{ color: 'white' }}
+          text={obj.text}
+          onClick={this.handleClick}
+        />
+      );
     }, this);
   }
 

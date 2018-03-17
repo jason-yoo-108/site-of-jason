@@ -9,13 +9,17 @@ export class Experiences extends Component {
   constructor(props) {
     super(props);
   }
-  //style={{marginLeft: 'auto', marginRight: 'auto'}}
   render() {
     const linkSAP = 'https://www.sap.com/index.html';
     const linkHoot = 'https://hootsuite.com/';
     return (
-      <Jumbotron style={this.props.jumboStyle}>
+      <Jumbotron id="Experiences" style={this.props.jumboStyle}>
         <h1> Experiences</h1>
+        <p>
+          I was lucky to have known kind and helpful people at UBC and at
+          workplace who broadened my perspective of life and programming. I'm
+          especially thankful to George Secillano, my mentor at SAP Labs Canada.
+        </p>
         <Carousel interval={10000}>
           <Carousel.Item>
             <Row style={{ margin: 0 }}>

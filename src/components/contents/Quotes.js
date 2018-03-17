@@ -39,7 +39,7 @@ export class Quotes extends Component {
     };
     const quoteInfo = this.randomQuote();
     return (
-      <Jumbotron style={this.props.jumboStyle}>
+      <Jumbotron id="Quotes" style={this.props.jumboStyle}>
         <h1>Quote of the Day</h1>
         <p>
           This section features a random quote chosen from the list of my
