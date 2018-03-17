@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  background: url('../images/tempme.jpg') no-repeat center center fixed;
+  background: url('../images/bg-small.jpg') no-repeat center center fixed;
   background-size: cover;
   overflow: auto;
   -webkit-background-size: cover;
@@ -19,7 +19,7 @@ img {
 
 @media (min-width: 768px) {
   .App {
-    background: url('../images/tempbg.jpg') no-repeat center center fixed;
+    background: url('../images/bg-large.jpg') no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;

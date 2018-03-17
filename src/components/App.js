@@ -3,7 +3,6 @@ import { CustomNavbar } from './CustomNavbar';
 import { CustomBody } from './CustomBody';
 import '../css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from '../images/logo.svg';
 
 class App extends Component {
   render() {

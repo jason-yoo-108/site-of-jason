@@ -48,7 +48,7 @@ export class CustomNavbar extends Component {
   }
 
   render() {
-    const fadedGray = 'rgba(96, 96, 96, 0.7)';
+    const fadedGray = 'rgba(96, 96, 96, 0.95)';
     return (
       <Navbar
         style={{ background: fadedGray, borderColor: fadedGray }}
