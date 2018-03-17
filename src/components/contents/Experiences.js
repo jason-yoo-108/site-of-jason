@@ -6,9 +6,6 @@ import imageSAP from '../../images/sap.jpg';
 import imageHoot from '../../images/hootsuite.jpg';
 
 export class Experiences extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     const linkSAP = 'https://www.sap.com/index.html';
     const linkHoot = 'https://hootsuite.com/';
@@ -25,7 +22,7 @@ export class Experiences extends Component {
             <Row style={{ margin: 0 }}>
               <Col xs={12} sm={6} style={{ padding: 24 }}>
                 <a href={linkSAP} target="_blank">
-                  <img src={imageSAP} />
+                  <img src={imageSAP} alt="" />
                 </a>
               </Col>
               <Col xs={12} sm={6} style={{ padding: 24 }}>
@@ -62,7 +59,7 @@ export class Experiences extends Component {
             <Row style={{ margin: 0 }}>
               <Col xs={12} sm={6} style={{ padding: 24 }}>
                 <a href={linkHoot} target="_blank">
-                  <img src={imageHoot} />
+                  <img src={imageHoot} alt="" />
                 </a>
               </Col>
               <Col xs={12} sm={6} style={{ padding: 24 }}>

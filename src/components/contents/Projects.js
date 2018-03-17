@@ -6,9 +6,6 @@ import imageMindFulfilled from '../../images/mind_fulfilled.png';
 import imageZenfulBot from '../../images/zenful_bot.png';
 
 export class Projects extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     const linkZenfulBot = 'https://www.messenger.com/t/zenfulbot';
     const linkMindFulfilled = 'https://github.com/truebluejason/mind_fulfilled';
@@ -26,7 +23,7 @@ export class Projects extends Component {
             <Row style={{ margin: 0 }}>
               <Col xs={12} sm={6} style={{ padding: 24 }}>
                 <a href={linkZenfulBot} target="_blank">
-                  <img src={imageZenfulBot} />
+                  <img src={imageZenfulBot} alt="" />
                 </a>
               </Col>
               <Col xs={12} sm={6} style={{ padding: 24 }}>
@@ -59,7 +56,7 @@ export class Projects extends Component {
             <Row style={{ margin: 0 }}>
               <Col xs={12} sm={6} style={{ padding: 24 }}>
                 <a href={linkMindFulfilled} target="_blank">
-                  <img src={imageMindFulfilled} />
+                  <img src={imageMindFulfilled} alt="" />
                 </a>
               </Col>
               <Col xs={12} sm={6} style={{ padding: 24 }}>
