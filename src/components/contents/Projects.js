@@ -4,21 +4,89 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../css/Carousel.css';
 import imageMindFulfilled from '../../images/mind_fulfilled.png';
 import imageZenfulBot from '../../images/zenful_bot.png';
+import imageP2EWebsite from '../../images/p2e_website.png';
+import imageP2EBot from '../../images/p2e_bot.png';
 
 export class Projects extends Component {
   render() {
+    const linkP2EBot = 'https://github.com/truebluejason/p2e-bot';
+    const linkP2EWebsite = 'https://github.com/truebluejason/p2e-website';
     const linkZenfulBot = 'https://www.messenger.com/t/zenfulbot';
     const linkMindFulfilled = 'https://github.com/truebluejason/mind_fulfilled';
     return (
       <Jumbotron id="Projects" style={this.props.jumboStyle}>
         <h1>Projects</h1>
         <p>
-          One rainy day in 2017, an idea struck me - "Why don't I combine my
-          enthusiasm for meditation and neuroscience with my coding skills to
-          make cool things?" The projects below are the results of my humble
-          effort at realizing that thought.
+          One rainy day in 2017, an thought struck me - "Why don't I combine
+          ideas of my interest with programming to make cool things?" The
+          projects below are the results of my effort at realizing that thought.
         </p>
         <Carousel interval={10000}>
+          <Carousel.Item>
+            <Row style={{ margin: 0 }}>
+              <Col xs={12} sm={6} style={{ padding: 24 }}>
+                <a href={linkP2EBot} target="_blank">
+                  <img src={imageP2EBot} alt="" />
+                </a>
+              </Col>
+              <Col xs={12} sm={6} style={{ padding: 24 }}>
+                <h3>P2E Bot: A Facebook Bot</h3>
+                <div style={{ textAlign: 'left' }}>
+                  <p>
+                    P2E Bot is a Facebook bot that can schedule meditation
+                    reminders and hold interactive conversation sequences.
+                  </p>
+                  <p>Here are some of the project's features:</p>
+                  <ul>
+                    <li>
+                      Schedule daily meditation reminders that come with
+                      randomly selected Zen quotes.
+                    </li>
+                    <li>
+                      Conversation sequences that prompts the user to
+                      investigate an aspect of subjective experience
+                    </li>
+                    <li>
+                      View consistency of practice, past action plans, and more
+                    </li>
+                  </ul>
+                </div>
+              </Col>
+            </Row>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Row style={{ margin: 0 }}>
+              <Col xs={12} sm={6} style={{ padding: 24 }}>
+                <a href={linkP2EWebsite} target="_blank">
+                  <img src={imageP2EWebsite} alt="" />
+                </a>
+              </Col>
+              <Col xs={12} sm={6} style={{ padding: 24 }}>
+                <h3>P2E Website: A Site on Meditation</h3>
+                <div style={{ textAlign: 'left' }}>
+                  <p>
+                    Path to Enlightenment website is a site for learning about
+                    meditation and keeping track of one's progress.
+                  </p>
+                  <p>Here are some of the project's features:</p>
+                  <ul>
+                    <li>
+                      Step by step meditation instructions based on a levelling
+                      system
+                    </li>
+                    <li>
+                      Diagnotistc survey for making sure your practice stays on
+                      point
+                    </li>
+                    <li>
+                      Solutions for problems commonly encountered during
+                      meditation
+                    </li>
+                  </ul>
+                </div>
+              </Col>
+            </Row>
+          </Carousel.Item>
           <Carousel.Item>
             <Row style={{ margin: 0 }}>
               <Col xs={12} sm={6} style={{ padding: 24 }}>
@@ -27,7 +95,7 @@ export class Projects extends Component {
                 </a>
               </Col>
               <Col xs={12} sm={6} style={{ padding: 24 }}>
-                <h3>Zenful Bot: A Facebook Messenger Bot</h3>
+                <h3>Zenful Bot: A Facebook Bot</h3>
                 <div style={{ textAlign: 'left' }}>
                   <p>
                     Zenful Bot is a Facebook bot designed to help you have a
