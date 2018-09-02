@@ -20,7 +20,7 @@ export class Contact extends Component {
         <Nav pullRight>
           <li>
             <a
-              href="https://www.linkedin.com/in/jasonjinsooyoo/"
+              href="https://www.linkedin.com/in/jjsyoo/"
               target="_blank"
               rel="noopener noreferrer"
             >
